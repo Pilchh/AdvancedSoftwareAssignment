@@ -1,4 +1,4 @@
-package org.example;
+package org.ribblegridlock;
 
 import java.util.concurrent.Semaphore;
 

@@ -1,4 +1,4 @@
-package org.example;
+package org.ribblegridlock;
 
 public class CarPark extends Thread {
 

@@ -1,4 +1,4 @@
-package org.example;
+package org.ribblegridlock;
 
 public class Main {
 
@@ -67,7 +67,7 @@ public class Main {
         while (!Clock.getInstance().isFinished())
         {
             int currentTime = Clock.getInstance().getCurrentTime();
-            if (currentTime % 600 < 5 || currentTime % 600 > 595)
+            if (currentTime % 600 == 0)
             {
                 String time = Logger.getInstance().secondsToTime(currentTime);
 
@@ -79,7 +79,7 @@ public class Main {
             }
 
             try {
-                Thread.sleep(1000);
+                Thread.sleep(101);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }

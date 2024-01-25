@@ -1,4 +1,4 @@
-package org.example;
+package org.ribblegridlock;
 
 public class Clock extends Thread
 {

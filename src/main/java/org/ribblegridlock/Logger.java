@@ -1,4 +1,4 @@
-package org.example;
+package org.ribblegridlock;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -39,7 +39,7 @@ public class Logger {
         String output = "Junction " + id + ": " + carsThrough + " cars through from the " + directionName + ". " + carsWaiting + " cars waiting.";
         if (carsWaiting > 0 && carsThrough == 0)
         {
-            output += " GRIDLOCk";
+            output += " GRIDLOCK";
         }
 
         writeToFile(output);
